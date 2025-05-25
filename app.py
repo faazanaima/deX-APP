@@ -12,8 +12,6 @@ from custom_components import (
 st.set_page_config(page_title="DeX APP: Term Deposit Bank Predictor", page_icon="🎯")
 import conn
 
-git commit -m "first commit"
-
 # ===== Sidebar Menu =====
 st.sidebar.title("📂 Navigation")
 page = st.sidebar.selectbox("Select a Page", ("Home", "About", "Prediction", "History"), index=0)
