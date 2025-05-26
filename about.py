@@ -5,7 +5,7 @@ def app():
 
     st.markdown("""
     ## 🎯 About DeX-APP
-    **DeX-APP (Deposit Explorer – Advanced Prediction Platform)** is a smart machine learning solution built to help banks **predict which customers are most likely to subscribe to a term deposit**, using customer and campaign data.
+    **DeX-APP (Term Deposit Explorer – Advanced Prediction Platform)** is a smart machine learning solution built to help banks **predict which customers are most likely to subscribe to a term deposit**, using customer and campaign data.
 
     It empowers marketing teams to implement **targeted, efficient, and cost-effective strategies**—maximizing results, minimizing effort.
 
