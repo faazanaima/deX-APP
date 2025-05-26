@@ -4,14 +4,17 @@ import streamlit as st
 
 def get_connection():
     try:
-        return psycopg2.connect(
-            user=st.secrets["DB_USER"],
-            password=st.secrets["DB_PASSWORD"],
-            host=st.secrets["DB_HOST"],
-            port=st.secrets["DB_PORT"],
-            dbname=st.secrets["DB_NAME"]
+        conn = psycopg2.connect(
+            user=st.secrets["POOLER_USER"],
+            password=st.secrets["POOLER_PASSWORD"],
+            host=st.secrets["POOLER_HOST"],
+            port=st.secrets["POOLER_PORT"],
+            dbname=st.secrets["POOLER_DATABASE"]
         )
+        st.success("✅ Connected successfully.")
+        return conn
 
     except OperationalError as e:
-        st.error(f"❌ Database connection failed: {e}")
+        st.error("❌ Failed to connect.")
+        st.exception(e)
         return None
