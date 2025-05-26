@@ -12,6 +12,13 @@ from custom_components import (
 st.set_page_config(page_title="DeX APP: Term Deposit Bank Predictor", page_icon="🎯")
 import conn
 
+# ===== Load CSS Styles =====
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style.css")
+
 # ===== Sidebar Menu =====
 st.sidebar.title("📂 Navigation")
 page = st.sidebar.selectbox("Select a Page", ("Home", "About", "Prediction", "History"), index=0)
