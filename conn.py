@@ -11,7 +11,7 @@ def get_connection():
             port=st.secrets["POOLER_PORT"],
             dbname=st.secrets["POOLER_DATABASE"]
         )
-        st.success("✅ Connected successfully.")
+        # st.success("✅ Connected successfully.")
         return conn
 
     except OperationalError as e:
