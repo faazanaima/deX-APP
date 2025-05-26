@@ -243,7 +243,9 @@ Random Forest (Optimized) was selected due to:
 
 # 💡 Conclusion
 
-Implementing the Random Forest model reduces wasted marketing costs drastically, more than halving total costs from approximately $27K to $12K, while maintaining good predictive performance. The model enables targeted telemarketing campaigns with higher efficiency and ROI.
+Implementing the Random Forest model reduces wasted marketing costs drastically by approximately 67%., more than halving total costs from approximately $27K to $12k, while maintaining good predictive performance. The model enables targeted telemarketing campaigns with higher efficiency and ROI by targeting the right customers.
+
+
 
 ---
 
