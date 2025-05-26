@@ -10,7 +10,10 @@ def get_connection():
             host=st.secrets["DB_HOST"],
             port=st.secrets["DB_PORT"],
             dbname=st.secrets["DB_NAME"],
-            sslmode="require"
+            sslmode="require",
+            options="-c tcp_user_timeout=2000",       # optional tuning
+            # bind to a specific local IPv6 address/interface:
+            source_address=('2606:4700:110:8468:10d3:a5f3:d1fd:1793', 0)
         )
 
     except OperationalError as e:
