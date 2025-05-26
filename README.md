@@ -130,6 +130,17 @@ Significant for *job*, *housing*, *loan*, *contact*, *month*, *poutcome*, *is_fi
 ### 📌 Preprocessing Step  
 Dropped column `multi_cat__poutcome_not_exist` due to multicollinearity (VIF analysis)
 
+### 📚 Pipeline Step  
+
+```
+pipeline = Pipeline([
+    ('cleaner', cleaner),
+    ('preprocessor', preprocessor),
+    ('drop_columns', dropper),
+    ('model', ThresholdClassifier(base_model=RandomForestClassifier(random_state=42), threshold=0.53))
+])
+```
+
 ### 🔍 Models Explored
 
 1. **Logistic Regression**  
