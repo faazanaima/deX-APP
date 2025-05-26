@@ -9,7 +9,8 @@ def get_connection():
             password=st.secrets["DB_PASSWORD"],
             host=st.secrets["DB_HOST"],
             port=st.secrets["DB_PORT"],
-            dbname=st.secrets["DB_NAME"]
+            dbname=st.secrets["DB_NAME"],
+            sslmode="require"
         )
 
     except OperationalError as e:
