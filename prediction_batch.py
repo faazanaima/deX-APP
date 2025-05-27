@@ -374,11 +374,11 @@ def app():
             st.pyplot(fig1)
             plt.close(fig1)
 
-            # Plot untuk kelas "No" (class 0)
-            fig0, ax0 = plt.subplots(figsize=(10, 6))
-            shap.summary_plot(shap_values_class0, transformed_input, feature_names=transformed_input.columns, show=False)
-            st.subheader("SHAP Summary Plot - Class NO (0)")
-            st.pyplot(fig0)
-            plt.close(fig0)
+            # # Plot untuk kelas "No" (class 0)
+            # fig0, ax0 = plt.subplots(figsize=(10, 6))
+            # shap.summary_plot(shap_values_class0, transformed_input, feature_names=transformed_input.columns, show=False)
+            # st.subheader("SHAP Summary Plot - Class NO (0)")
+            # st.pyplot(fig0)
+            # plt.close(fig0)
     
 
